@@ -3,14 +3,7 @@
 We explore set dueling GPU Caches in GPGPU-Sim v3.3. We are using docker containers
 to run the above code, as the above runs on Cuda 4.
 
-Simply use the Dockerfile to build the image like so
-
-``
-
-The container will then have all the necessary
-files to run the code, including the benchmarks. After running the container like so
-
-``
+Follow instructions in the txt file 
 
 And then follow the usual steps in GPGPU-Sim to make and build. For
 everyones convenience, the commands are below
