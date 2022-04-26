@@ -432,7 +432,7 @@ class tag_array_basic: public tag_array {
 
 protected:
   tag_array_basic(cache_config &config, int core_id, int type_id,
-            cache_block_t **new_lines);
+            cache_block_t *new_lines);
 };
 
 class tag_array_rrip: public tag_array {
@@ -453,7 +453,7 @@ class tag_array_rrip: public tag_array {
 
 protected:
   tag_array_rrip(cache_config &config, int core_id, int type_id,
-            cache_block_t **new_lines);
+            cache_block_t *new_lines);
     unsigned maxrrvp = MAX_RRVP;
     unsigned **rrvp;
 };
@@ -471,7 +471,7 @@ class tag_array_drrip: public tag_array_rrip {
 
 protected:
   tag_array_drrip(cache_config &config, int core_id, int type_id,
-            cache_block_t **new_lines);
+            cache_block_t *new_lines);
     set_type *s_types;
     int psel = 0;
 };

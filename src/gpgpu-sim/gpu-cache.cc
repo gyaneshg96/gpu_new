@@ -513,7 +513,7 @@ void tag_array_basic::fill( unsigned index, unsigned time )
 }
 
 tag_array_basic::tag_array_basic(cache_config &config, int core_id, int type_id,
-                             cache_block_t **new_lines) : tag_array(config, core_id, type_id, new_lines)
+                             cache_block_t *new_lines) : tag_array(config, core_id, type_id, new_lines)
 {
 }
 
@@ -739,7 +739,7 @@ unsigned tag_array_rrip:: select_eviction(unsigned set_index){
 }
 
 tag_array_rrip::tag_array_rrip(cache_config &config, int core_id, int type_id,
-                             cache_block_t **new_lines) : tag_array(config, core_id, type_id, new_lines)
+                             cache_block_t *new_lines) : tag_array(config, core_id, type_id, new_lines)
 {
       unsigned int n_set = m_config.m_nset;
   unsigned int n_assoc = m_config.m_assoc;
@@ -855,7 +855,7 @@ unsigned tag_array_drrip::select_eviction(unsigned set_index){
 }
 
 tag_array_drrip::tag_array_drrip(cache_config &config, int core_id, int type_id, 
-  cache_block_t **new_lines) : tag_array_rrip(config, core_id, type_id, new_lines)
+  cache_block_t *new_lines) : tag_array_rrip(config, core_id, type_id, new_lines)
 {
   unsigned n_set = m_config.m_nset;
   s_types = (set_type *)calloc(n_set, sizeof(set_type));
